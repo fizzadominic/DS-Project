@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@200&display=swap');
+
+:root{
+    --heading-color: #435334;  /*for heading*/
+    --text-color: #9EB384;
+    --background_color: #FAF1E4;
+    --suporting-color: #CEDEBD;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    margin-top: -6px;
+    font-family: 'Poppins', sans-serif;
+    height: 35vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--heading-color);
+    background-color: var(--background_color);
+}
+.mainContainer h1{
+    font-family: 'Poppins', sans-serif;
+
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    width: 50%;    
+}
+.function{
+    height: 190px;
+    width: 200px;
+    border-radius: 1.3rem;
+    background-color: var(--suporting-color);
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    position: relative;
+  
+}
+
+.btn{
+    position: absolute;
+    bottom: 10px;
+    left: 36px;
+
+}
+.btn button{
+    border-radius: 12px;
+    padding: 8px 8px 8px 8px;
+    border: none;
+    letter-spacing: 2px;
+    background-color: var(--heading-color);
+    color: var(--background_color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.sequence{
+    height: 190px;
+    width: 200px;
+    border-radius: 1.3rem;
+    background-color: var(--suporting-color);
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    position: relative;
+
+}
+
+.sets{
+    height: 190px;
+    width: 200px;
+    border-radius: 1.3rem;
+    background-color: var(--suporting-color);
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    position: relative;
+
+}
+
+
+/*  second container */
+.secondContainer{
+    background-image: url(assesst/01.jpg);
+    height: 60.06vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* footer */
+.footer{
+    background-color: var(--heading-color);
+    height: 5.6vh;
+    text-align: center;
+    display: flex;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer h4{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-right: 6px;
+    font-weight: 300;
+}
+.footer span{
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    margin-right: 4px;
+}
