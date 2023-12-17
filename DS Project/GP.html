@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Sequence | a Geometric Progression</title>
+    <link rel="stylesheet" href="GP.css">
+</head>
+<body>
+    
+
+        <div class="MainContent">
+            <div class="ouput">
+
+                <div class="container">
+
+                    <h3>Formulae of a GP</h3>
+                    <img src="assesst/GPformaula.png" alt="">
+                    <p class="askChoice"></p>
+                    <h3>What do you want to solve first?</h3>
+    
+                    
+                    <div class="choiceBtn">
+    
+                        <button id="NthTbn" onClick="handleClick">nth term of a GP</button>
+                        <button onclick="commonRatio" id="CRbtn">Common ratio</button>
+                        <button onclick="SumOftheFinits" id="FiniteBtn">Sum of nth term finite Geometric Sequence</button>
+                        <button onclick="sumOfInfinite" id="infiniteBtn"  >Sum of first infinite Geometric Sequence</button>
+                        <button onclick="generateGP" id="GPBtn">Generate a GP(enter term and common ratio)</button>
+                    </div>
+
+                </div>
+
+
+
+                <div id="displayPrompt" class="prompt">
+                    <p class="paragraph" id="error"></p>
+                    <div class="displayPrompt1" id="displaySequence"></div>
+                </div>
+                <!-- <p  id="displayPrompt"></p> -->
+
+            </div>
+    
+            <div class="searchInput">
+                
+                <input  type="text" id="myInput" placeholder="Enter your prompt here">
+                <img  id="delete" onclick="clear()" class="search" src="assesst/cross.png" alt="search">
+            </div>
+             
+        </div>
+    
+
+
+    <script src="GP.js"></script>
+</body>
+</html>  

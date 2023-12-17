@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Display</title>
+</head>
+<body>
+    <div id="arrayDisplay"></div>
+
+    <script>
+        // Your JavaScript code
+        let arr = [];
+        let power = 1;
+        let ratio;
+        let n = 3;
+        let r = 2;
+        let a = 2;
+
+        for (let i = 0; i <= n; i++) {
+            ratio = Math.pow(r, power);
+            let formula = a * ratio;
+            arr.push(formula);
+            power++;
+        }
+
+        // Display array content in HTML
+        const displayDiv = document.getElementById('arrayDisplay');
+        displayDiv.textContent = 'Array Content: ' + arr.join(', ');
+    </script>
+</body>
+</html>

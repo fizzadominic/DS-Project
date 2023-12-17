@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonic Sequence | Harmonic Progression</title>
+    <link rel="stylesheet" href="feb.css">
+</head>
+<body>
+    
+
+        <div class="MainContent">
+            <div class="ouput">
+
+                <div class="container">
+
+                    <h3>Febonacci Series</h3>
+                    <img src="assesst/febonacci.png" alt="">
+                    <p class="askChoice"></p>
+    
+                    
+                    <div class="choiceBtn">
+    
+                        <button id="NthTbn" onClick="handleClick">Generate Febonacci series</button>
+                        
+                    </div>
+
+                </div>
+
+
+
+                <div id="displayPrompt" class="prompt">
+                    <p class="paragraph" id="error"></p>
+                    <div class="displayPrompt1" id="displaySequence"></div>
+                </div>
+                <!-- <p  id="displayPrompt"></p> -->
+
+            </div>
+    
+            <div class="searchInput">
+                
+                <input  type="text" id="myInput" placeholder="Enter your prompt here">
+                <img  id="delete" onclick="clear()" class="search" src="assesst/cross.png" alt="search">
+            </div>
+             
+        </div>
+    
+
+
+    <script src="feb.js"></script>
+</body>
+</html>  
