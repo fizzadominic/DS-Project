@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@200&display=swap");
+
+:root {
+    --heading-color: #435334; /*for heading*/
+    --text-color: #9eb384;
+    --background_color: #faf1e4;
+    --suporting-color: #cedebd;
+  }
+* {
+    margin: 0;
+    padding: 0;
+  
+    
+  }
+  .main{
+    height: 50vh;
+    width: 100%;
+  }
+  .head{
+    font-family: 'Poppins';
+    color: var(--heading-color);
+    margin: 2vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-container{
+    margin: 10vh;
+    display: flex;
+    flex-direction: row;
+  justify-content: center;
+    
+  }
+  input {
+    display: flex;
+    color: var(--heading-color)  ;
+    font-size: medium;
+    width: 300px;
+    padding: 10px;
+    border: 2px solid var(--heading-color);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    
+}
+
+input:focus {
+    border-color: var(--text-color);
+}
+
+.operation{
+  display: flex;
+  color: var(--heading-color)  ;
+  font-size: medium;
+  width: 130px;
+  padding: 10px;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  border: 2px solid var(--heading-color);
+  border-radius: 10px;
+  outline: none;
+
+}
+.btn{
+  font-size: medium;
+  padding: 5px;
+  margin-left : 5vw;
+  border-radius: 10px;
+  font-family: 'poppins';
+  background-color: var(--heading-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+.btn:hover{
+  background-color: var(--text-color);
+  color: #000;
+  border-color: var(--text-color);
+}
+.results{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border: 2px solid var(--heading-color);
+  height: 52vh;
+  margin-right: 25vw;
+  margin-left: 25vw;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  color: var(--heading-color);
+}
+p{
+  margin: 2vh;
+  font-family: 'Poppins';
+  font-size: large;
+}
+.hello{
+  height: 100vh;
+  width: 100vh;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.side{
+  background-color: yellow;
+  height: 100%;
+  width: 15%;
+}

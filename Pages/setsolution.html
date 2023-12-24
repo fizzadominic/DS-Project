@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/setsstyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="head">
+      <h1>Oprations On Sets</h1>
+    </div>
+    <div class="main">           
+      <form action="">
+        <div class="input-container">
+          <input class="setA text" placeholder="Enter Values Of set A">
+          <select class="operation" name="Operations">
+              <option value="Union">Union</option>
+              <option value="Intersection">Intersection</option>
+              <option value="Cartesian">Cartesian</option>
+              <option value="Complement">Complement</option>
+          </select>
+          <input class="setB text" type="text" placeholder="Enter Values Of set B">
+          <button class="btn" onclick="performOperation(event)">Calculate</button>
+    </div>
+</form>
+<div class="results">
+  <h1>Result</h1>
+  <p id ="text"></p>
+  <p id="seta"></p>
+  <p id="setb"></p>
+  <p id ="textb"></p>
+  <p id="result">Result is : </p>
+</div>
+</div>
+  </body>
+</html>
+<script src="../Js/sets.js"></script>
