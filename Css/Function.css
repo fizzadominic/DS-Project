@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@200&display=swap");
+
+:root {
+  --heading-color: #435334; /*for heading*/
+  --text-color: #9eb384;
+  --background_color: #faf1e4;
+  --suporting-color: #cedebd;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainContainer {
+  font-family: "Poppins", sans-serif;
+  height: 42vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--heading-color);
+
+  background-color: var(--background_color);
+}
+.mainContainer h1 {
+  font-family: "Poppins", sans-serif;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+.cardhead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cardheadimg {
+  height: 5vh;
+  width: 3vw;
+}
+.card {
+  margin-top: 10px;
+  padding: 10px;
+  height: 25vh;
+  width: 20vw;
+  border-radius: 1.3rem;
+  background-color: var(--suporting-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.65);
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--heading-color);
+  transform: scale(1.05);
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease;
+}
+
+.btn button {
+  border-radius: 12px;
+  padding: 8px 12px;
+  border: none;
+  letter-spacing: 2px;
+  background-color: var(--heading-color);
+  color: var(--background_color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.btn button:hover {
+  background-color: var(--suporting-color);
+  color: var(--heading-color);
+}
+
+/*  second container */
+.secondContainer {
+    font-family: "Poppins", sans-serif;  
+  background-color: var(--background_color);
+  height: 52vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--heading-color);
+}
+
+/* footer */
+.footer {
+  background-color: var(--heading-color);
+  height: 6vh;
+  text-align: center;
+  display: flex;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+}
+.footer h4 {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-right: 6px;
+  font-weight: 300;
+}
+.footer span {
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  margin-right: 4px;
+}

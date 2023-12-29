@@ -97,16 +97,3 @@ p{
   font-family: 'Poppins';
   font-size: large;
 }
-.hello{
-  height: 100vh;
-  width: 100vh;
-  background-color: #000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.side{
-  background-color: yellow;
-  height: 100%;
-  width: 15%;
-}

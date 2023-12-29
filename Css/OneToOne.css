@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@200&display=swap");
+
+:root {
+  --heading-color: #435334; /*for heading*/
+  --text-color: #9eb384;
+  --background_color: #faf1e4;
+  --suporting-color: #cedebd;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background_color);
+  
+}
+.main {
+    display: grid;
+    grid-gap: 150px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: var(--head-color);
+    height: 93vh;
+    text-align: center; /* Center-align text */
+    
+
+  }
+  
+  .main h1 {
+    grid-column: 1 / -1; /* Span across all columns */
+    grid-row: 1 / 1; /* Place in the first row */
+    align-self: center; /* Vertically center the heading */
+    justify-self: center; /* Horizontally center the heading */
+    font-family: "Poppins", sans-serif;  
+    margin: 0; /* Remove default margin */
+    color: var(--heading-color);
+   
+  }
+.SideBar{
+    background-color: var(--suporting-color);
+    grid-column: 1;
+    grid-row: 1/6;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   font-family: "Poppins", sans-serif; 
+  
+
+}
+.input-container {
+    grid-column: 1 / -1;
+    grid-row: 2/ 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6%;
+   
+  }
+  
+  .inputs {
+    display: flex;
+    margin: 0 10px; /* Add some space between inputs */
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  input{
+    padding: 5px;
+    font-size: medium;
+
+  }
+  
+  .inputs input {
+    /* Input styles */
+    margin: 0 10px; /* Add some space between inputs */
+    width: 250px; /* Set the width of the input */
+  }
+  
+  .btn {
+    /* Button styles */
+    font-size: medium;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'poppins';
+    background-color: var(--heading-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 2vh;
+  }
+  
+  .btn:hover {
+    background-color: var(--text-color);
+    color: #000;
+    border-color: var(--text-color);
+  }
+  .Image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    background-color: transparent; 
+}
+img{
+  height: 25vh;
+  width: 83%;
+  margin: 2vw;
+}
+.text{
+  margin-top: 3vh;
+}
+  

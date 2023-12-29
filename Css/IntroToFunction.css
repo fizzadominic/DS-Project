@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@200&display=swap");
+
+:root {
+  --heading-color: #435334; /*for heading*/
+  --text-color: #9eb384;
+  --background_color: #faf1e4;
+  --suporting-color: #cedebd;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background_color);
+}
+.Intro{
+ 
+  height: 13vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--heading-color);
+  
+}
+.Intro h1{
+    font-family: "Poppins", sans-serif;
+    size: 400px;
+}
+.Paragraph{
+
+    background-color: var(--background_color);
+    border-radius: 50px;
+    margin-top: 13px;
+}
+.Paragraph p{
+    font-family: "Poppins", sans-serif;
+    height: 5vh;
+    width: 95%;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+   padding-left: 2vh;
+}
+.Image{
+    display: flex;
+    flex-direction: row;
+   
+    background-repeat: no-repeat;
+    margin-top: 20%;
+    align-items: center;   
+}
+img{
+    height: 33vh;
+    width: 33%;
+    margin: 2vw;
+}
+

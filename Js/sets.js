@@ -14,8 +14,12 @@ const performOperation = (event) => {
     case "Complement":
       performComplement(setA, setB);
       break;
+      case "Cartesian":
+        performCartesianProduct(setA, setB);
+        break;
   }
-};const performUnion = (setA, setB) => {
+};
+const performUnion = (setA, setB) => {
   let setAArray = setA.split(",").map((item) => item.trim());
   let setBArray = setB.split(",").map((item) => item.trim());
 
@@ -26,55 +30,55 @@ const performOperation = (event) => {
 
   console.log("Union Result:", unionResult);
 
-  let element = document.getElementById("text");
+  const element = document.getElementById("text");
   element.textContent = `You have entered the following sets`;
 
-  let setaElement = document.getElementById("seta");
+  const setaElement = document.getElementById("seta");
   setaElement.textContent = `A = { ${setAArray.join(", ")} }`;
 
-  let setbElement = document.getElementById("setb");
+  const setbElement = document.getElementById("setb");
   setbElement.textContent = `B = { ${setBArray.join(", ")} }`;
 
-  let bElement = document.getElementById("textb");
+  const bElement = document.getElementById("textb");
   bElement.textContent = `The union of Set A and B is`;
 
-  let resultElement = document.getElementById("result");
-  resultElement.textContent = `Result: { ${unionResult.join(", ")} }`;
+  const resultElement = document.getElementById("result");
+  resultElement.textContent = `Result: { ${unionResult.join("")} }`;
 };
-
-
 const performIntersection = (setA, setB) => {
   let setAArray = setA.split(",").map((item) => item.trim());
   let setBArray = setB.split(",").map((item) => item.trim());
   let intersectionResult = [];
-  for (let i = 0; i < setA.length; i++) {
-    for (let j = 0; j < setB.length; j++) {
-      if (setA[i] == setB[j]) {
-        intersectionResult.push(setA[i]);
+
+  for (let i = 0; i < setAArray.length; i++) {
+    for (let j = 0; j < setBArray.length; j++) {
+      if (setAArray[i] == setBArray[j]) {
+        intersectionResult.push(setAArray[i]);
       }
     }
   }
 
-  let element = document.getElementById("text");
+  const element = document.getElementById("text");
   element.textContent = `You have entered the following sets`;
 
-  let setaElement = document.getElementById("seta");
+  const setaElement = document.getElementById("seta");
   setaElement.textContent = `A = { ${setAArray.join(", ")} }`;
 
-  let setbElement = document.getElementById("setb");
+  const setbElement = document.getElementById("setb");
   setbElement.textContent = `B = { ${setBArray.join(", ")} }`;
 
-  let bElement = document.getElementById("textb");
+  const bElement = document.getElementById("textb");
   bElement.textContent = `The intersection of Set A and B is `;
 
-  let resultElement = document.getElementById("result");
-  resultElement.textContent = `Result: {${intersectionResult.join(", ")}} `;
+  const resultElement = document.getElementById("result");
+  resultElement.textContent = `Result: {${intersectionResult.join("")}} `;
 };
+
 const performComplement = (setA, setB) => {
   let setAArray = setA.split(",").map((item) => item.trim());
   let setBArray = setB.split(",").map((item) => item.trim());
   let compResult = [];
- 
+
   for (let i = 0; i < setAArray.length; i++) {
     let found = false;
     for (let j = 0; j < setBArray.length; j++) {
@@ -87,19 +91,46 @@ const performComplement = (setA, setB) => {
       compResult.push(setAArray[i]);
     }
   }
-    console.log(compResult);
-  let element = document.getElementById("text");
+
+  const element = document.getElementById("text");
   element.textContent = `You have entered the following sets`;
 
-  let setaElement = document.getElementById("seta");
+  const setaElement = document.getElementById("seta");
   setaElement.textContent = `A = { ${setAArray.join(", ")} }`;
 
-  let setbElement = document.getElementById("setb");
+  const setbElement = document.getElementById("setb");
   setbElement.textContent = `B = { ${setBArray.join(", ")} }`;
 
-  let bElement = document.getElementById("textb");
+  const bElement = document.getElementById("textb");
   bElement.textContent = `The Complement of Set A and B is `;
 
-  let resultElement = document.getElementById("result");
-  resultElement.textContent = `Result: { ${[...compResult].join(", ")} } `;
+  const resultElement = document.getElementById("result");
+  resultElement.textContent = `Result: { ${compResult.join("")} } `;
+};
+
+const performCartesianProduct = (setA, setB) => {
+  let setAArray = setA.split(",").map((item) => item.trim());
+  let setBArray = setB.split(",").map((item) => item.trim());
+  let cartesianProduct = [];
+
+  for (let i = 0; i < setAArray.length; i++) {
+    for (let j = 0; j < setBArray.length; j++) {
+      cartesianProduct.push(`(${setAArray[i]}, ${setBArray[j]})`);
+    }
+  }
+
+  const element = document.getElementById("text");
+  element.textContent = `You have entered the following sets`;
+
+  const setaElement = document.getElementById("seta");
+  setaElement.textContent = `A = { ${setAArray.join(", ")} }`;
+
+  const setbElement = document.getElementById("setb");
+  setbElement.textContent = `B = { ${setBArray.join(", ")} }`;
+
+  const bElement = document.getElementById("textb");
+  bElement.textContent = `The Cartesian Product of Set A and B is `;
+
+  const resultElement = document.getElementById("result");
+  resultElement.textContent = `Result: { ${cartesianProduct.join("")} } `;
 };
