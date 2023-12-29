@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-  
+  background-color: var(--background_color);
     
   }
   .main{
@@ -53,7 +53,7 @@ input:focus {
   display: flex;
   color: var(--heading-color)  ;
   font-size: medium;
-  width: 130px;
+  width: 140px;
   padding: 10px;
   margin-left: 5vh;
   margin-right: 5vh;
@@ -96,4 +96,17 @@ p{
   margin: 2vh;
   font-family: 'Poppins';
   font-size: large;
+}
+.img{
+  height: 40vh;
+  width: 30vw;
+}
+.head2{
+  margin: 2vh;
+  color: var(--heading-color);
+}
+
+.para{
+  margin: 2vh;
+  color: var(--heading-color);
 }

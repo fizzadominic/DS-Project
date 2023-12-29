@@ -134,3 +134,39 @@ const performCartesianProduct = (setA, setB) => {
   const resultElement = document.getElementById("result");
   resultElement.textContent = `Result: { ${cartesianProduct.join("")} } `;
 };
+
+// VennDiagramm
+// Assuming you have predefined image URL for Union Venn diagram
+const unionimage = "../assesst/union.png";
+const intersectionimage = "../assesst/intersection.png";
+const complementimage = "../assesst/complement.png"; 
+const cartesianimage = "../assesst/cartesian.png"; 
+
+
+// Function to draw Union Venn diagram
+const drawvenn = (event) => {
+  event.preventDefault();
+
+  // Get selected operation
+  let operation = document.querySelector(".operation").value;
+
+  // Get the image element
+  const vennImage = document.querySelector(".venn-diagram img");
+
+  // Set the source of the image based on the selected operation
+  switch (operation) {
+    case "Union":
+      vennImage.src = unionimage;
+      break;
+      case "Intersection":
+        vennImage.src =   intersectionimage;
+        break;
+        case "Complement":
+          vennImage.src =   complementimage;
+          break;
+        case "Cartesian":
+          vennImage.src =   cartesianimage;
+          break;
+      
+      }
+};

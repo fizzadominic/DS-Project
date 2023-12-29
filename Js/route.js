@@ -10,6 +10,9 @@ const ToVennPage = () =>{
 const TosetsolPage = () =>{
   window.location.href = '../Pages/setsolution.html';
 }
+const TosetintroPage = () =>{
+  window.location.href = '../Pages/setintro.html';
+}
 const ToIntroPage = () => {
   window.location.href = "IntroToFunction.html";
 };
