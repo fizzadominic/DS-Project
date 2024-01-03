@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airthmetic Sequence | an Aithmethic Progression</title>
+    <link rel="stylesheet" href="../Css/AP.css">
+</head>
+<body>
+    
+
+        <div class="MainContent">
+            <div class="ouput">
+
+                <div class="container">
+
+                    <h3>Formulae of an AP</h3>
+                    <img src="../assesst/formulaOFAP.png" alt="">
+                    <p class="askChoice"></p>
+                    <h3>What do you want to solve first?</h3>
+    
+                    
+                    <div class="choiceBtn">
+    
+                        <button id="NthTbn" onClick="handleClick">nth term of an AP</button>
+                        <button onclick="commonDifference" id="CDbtn">Common difference</button>
+                        <button onclick="SumOftheFirstNthTerms" id="NthBtn">Sum of first nth term</button>
+                        <button onclick="lastTermisgiven" id="lastTerm">Sum of first nth term when the last term is given</button>
+                    </div>
+
+                </div>
+
+
+
+                <div id="displayPrompt" class="prompt">
+                    <p class="paragraph" id="error"></p>
+                </div>
+                <!-- <p  id="displayPrompt"></p> -->
+
+            </div>
+    
+            <div class="searchInput">
+                
+                <input  type="text" id="myInput" placeholder="Enter your prompt here">
+                <img  id="delete" onclick="clear()" class="search" src="../assesst/cross.png" alt="search">
+            </div>
+             
+        </div>
+    
+
+
+    <script src="../Js/AP.js"></script>
+</body>
+</html>  

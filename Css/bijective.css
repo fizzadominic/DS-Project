@@ -63,6 +63,8 @@
     margin: 0 10px; /* Add some space between inputs */
     width: 500px;
     margin-bottom: 10px;
+   
+    justify-content: center; 
   }
   input{
     padding: 5px;
@@ -109,4 +111,7 @@ img{
 .text{
   margin-top: 3vh;
 }
-  
+.text p{
+  font-family: 'poppins';
+  font-size: large;
+}  

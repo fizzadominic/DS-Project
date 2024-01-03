@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonic Sequence | Harmonic Progression</title>
+    <link rel="stylesheet" href="../Css/HP.css">
+</head>
+<body>
+    
+
+        <div class="MainContent">
+            <div class="ouput">
+
+                <div class="container">
+
+                    <h3>Formulae of a HP</h3>
+                    <img src="../assesst/HPformula.png" alt="">
+                    <p class="askChoice"></p>
+                    <h3>What do you want to solve first?</h3>
+    
+                    
+                    <div class="choiceBtn">
+    
+                        <button id="NthTbn" onClick="handleClick">nth term of a HP</button>
+                        <button onclick="commonDifference" id="CDbtn"> Common Difference</button>
+                        <button onclick="HarmonicSeries" id="HSeries"  >Harmonic Series</button>
+                        <button onclick="SumOfseries" id="SumBtn">Sum of series</button>
+                        <button onclick="generateHP" id="HPBtn">Generate a HP(enter term and common difference)</button>
+                    </div>
+
+                </div>
+
+
+
+                <div id="displayPrompt" class="prompt">
+                    <p class="paragraph" id="error"></p>
+                    <div class="displayPrompt1" id="displaySequence"></div>
+                </div>
+                <!-- <p  id="displayPrompt"></p> -->
+
+            </div>
+    
+            <div class="searchInput">
+                
+                <input  type="text" id="myInput" placeholder="Enter your prompt here">
+               </div>
+             
+        </div>
+    
+
+
+    <script src="../Js/HP.js"></script>
+</body>
+</html>  

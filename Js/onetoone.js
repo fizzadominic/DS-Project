@@ -33,16 +33,17 @@ document.addEventListener("DOMContentLoaded", function() {
             f(${x3}) = ${y3}\n
             f(${x4}) = ${y4}\n
             `;
-            output.textContent = `Its a functio, also one-to-one `;
-            displayPara.appendChild(output);
-
+            const output = document.createElement('p');
+            output.textContent = `Its a function, also one-to-one `;
+            
             displayPara.appendChild(prompt);
-
+            displayPara.appendChild(output);
+            
             if (y1 == y2 || y1 == y3 || y1 == y4) {
                 const output = document.createElement('p');
                 output.textContent = `Its neither a function nor one-to-one `;
                 displayPara.appendChild(output);
-
+                
             }
         }
 

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@800&family=Hind+Madurai:wght@300&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+:root{
+    --heading-color: #435334;  /*for heading*/
+    --text-color: #9EB384;
+    --background_color: #FAF1E4;
+    --suporting-color: #CEDEBD;
+    --error-color: #cb1616;
+}
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background_color);
+}
+
+
+.MainContent{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+    background-color: var(--heading-color);
+    margin: auto;
+  
+}
+.ouput{
+    background-color: var(--heading-color);
+    height: 80vh;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+
+}
+.ouput h3{
+    color: whitesmoke;
+    background-color: #435334 ;
+    font-weight: 100;
+    margin-left: 12px;
+    margin-top: 12px;
+    font-family: 'Handlee', cursive;
+    font-size: 23px;
+    width: 348px;
+}
+.ouput img {
+    height: 50vh;
+    margin-left: 12px ;
+   
+}
+.prompt{
+    background-color: pink;
+    color: whitesmoke;
+    font-size: 23px;
+    font-family: 'Handlee', cursive;
+    margin-left: 12px ;
+}
+/* Styles for the container div */
+.choiceBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px; 
+    width: 526px;
+    height: 21vh;
+    margin-top: 20px;
+    margin-left: 12px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+/* Styles for the buttons */
+.choiceBtn button {
+    padding: 8px 20px;
+    
+    border-radius: 5px;
+    background-color: #435334; /* Example background color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    border: black 2px solid;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    width: 524px;
+}
+
+.choiceBtn button:hover {
+    background-color: #2f3b24; /* Change color on hover */
+}
+.searchInput{
+    border: 3px solid #00993333;
+    width: 330px;
+    border-radius: 30px;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+    left: 600px;
+    top: 50px;
+}
+input{
+    
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 245px;
+}
+.search{
+    cursor: pointer;
+    height: 19px;
+    width: 18px;
+
+}
+
+.prompt{
+    background-color: var(--background_color);
+    width: 61%;
+    height: 59vh;
+    text-align: center;
+    margin-top: 40px;
+    color: #2f3b24;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.prompt p{
+    margin-top: 12px;
+    font-weight: 800;
+}
+
+.container{
+    display: flex;
+    background-color: var(--heading-color);
+    flex-direction: column;
+    height: 81vh;
+    width: 536px;
+    
+}

@@ -11,7 +11,6 @@
   margin: 0;
   padding: 0;
   background-color: var(--background_color);
-  
 }
 .main {
     display: grid;
@@ -21,11 +20,8 @@
     background-color: var(--head-color);
     height: 93vh;
     text-align: center; /* Center-align text */
-    
-
   }
-  
-  .main h1 {
+.main h1 {
     grid-column: 1 / -1; /* Span across all columns */
     grid-row: 1 / 1; /* Place in the first row */
     align-self: center; /* Vertically center the heading */
@@ -53,6 +49,7 @@
     grid-row: 2/ 3;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     margin-top: -6%;
    
@@ -60,6 +57,7 @@
   
   .inputs {
     display: flex;
+    justify-content: center;
     margin: 0 10px; /* Add some space between inputs */
     width: 500px;
     margin-bottom: 10px;
@@ -110,3 +108,7 @@ img{
   margin-top: 3vh;
 }
   
+.text p{
+  font-family: 'poppins';
+  font-size: large;
+} 

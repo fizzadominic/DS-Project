@@ -61,6 +61,8 @@
   .inputs {
     display: flex;
     margin: 0 10px; /* Add some space between inputs */
+    
+    justify-content: center;
     width: 500px;
     margin-bottom: 10px;
   }
@@ -109,4 +111,7 @@ img{
 .text{
   margin-top: 3vh;
 }
-  
+.text p{
+  font-family: 'poppins';
+  font-size: large;
+} 
